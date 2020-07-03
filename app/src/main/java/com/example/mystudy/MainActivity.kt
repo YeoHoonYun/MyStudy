@@ -2,10 +2,7 @@ package com.example.mystudy
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.mystudy.step1.AnyTest
-import com.example.mystudy.step1.FirstTest
-import com.example.mystudy.step1.NumberTest
-import com.example.mystudy.step1.StringTest
+import com.example.mystudy.step1.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +15,8 @@ class MainActivity : AppCompatActivity() {
 //        doTest(FirstTest(::WriteLn))
 //        doTest(NumberTest(::WriteLn))
 //        doTest(StringTest(::WriteLn))
-        doTest(AnyTest(::WriteLn))
+//        doTest(AnyTest(::WriteLn))
+        doTest(FunctionTest(::WriteLn))
     }
 
     private fun doTest(o : TestClass){
